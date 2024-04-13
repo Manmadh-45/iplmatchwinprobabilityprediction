@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 matches = pd.read_csv('matches.csv')
 deliveries = pd.read_csv('deliveries.csv')
 
-print(matches.head())
+
 
 print(deliveries.head())
 
@@ -20,7 +20,6 @@ print(matches_data)
 print(matches_data['team1'].unique())
 
 teams = [
-    'Sunrisers Hyderabad',
     'Mumbai Indians',
     'Royal Challengers Bangalore',
     'Kolkata Knight Riders',
@@ -29,7 +28,8 @@ teams = [
     'Punjab Kings',
     'Chennai Super Kings',
     'Rajasthan Royals',
-    'Delhi Capitals'
+    'Delhi Capitals',
+    'Sunrisers Hyderabad'
 ]
 
 matches_data['team1'] = matches_data['team1'].str.replace('Delhi Daredevils','Delhi Capitals')
